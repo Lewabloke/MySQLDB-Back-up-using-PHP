@@ -2,7 +2,6 @@
 include 'database.php';
 
 $tables = array();
-$handle = "";
 
 function backup_tables($DBH, $tables) {
 
@@ -149,3 +148,5 @@ function backup_tables($DBH, $tables) {
 		fclose($handle);
 }
 }
+backup_tables($DBH, $tables);
+?>
